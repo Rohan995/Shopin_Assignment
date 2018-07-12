@@ -64,7 +64,7 @@ model=new_model
 # In[13]:
 
 
-for layer in model.layers[:25]:
+for layer in model.layers[:15]:
     layer.trainable = False
 model.compile(loss='binary_crossentropy',
               optimizer=optimizers.SGD(lr=1e-4, momentum=0.9),
